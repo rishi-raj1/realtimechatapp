@@ -15,7 +15,9 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: ["http://localhost:3000"]
+}));
 
 app.use(express.json());  // to accept JSON data
 
@@ -38,7 +40,7 @@ const server = app.listen(PORT, console.log(`server started on port ${PORT}`.yel
 const io = require('socket.io')(server, {
     pingTimeout: 60000,
     cors: {
-        origin: '*'
+        origin: ["http://localhost:3000"]
     }
 });
 
