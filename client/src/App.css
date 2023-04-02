@@ -1,0 +1,27 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    background-image: url(./chat-app-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* codes for removing scrollbar are below */
+
+::-webkit-scrollbar {
+    width: 0px
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.281);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
