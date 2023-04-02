@@ -1,6 +1,5 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const data = require('./data/data.js');
 const connectDB = require('./config/db.js');
 const colors = require('colors');
 const userRoutes = require('./routes/userRoutes');
