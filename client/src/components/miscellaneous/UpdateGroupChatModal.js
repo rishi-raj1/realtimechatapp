@@ -31,7 +31,10 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain }) => {
         }
     };
 
-    const baseUrl = `http://localhost:5000`;
+    // const baseUrl = `http://localhost:5000`;
+    const baseUrl = `https://chatappbackend-ocod.onrender.com`;
+
+
 
     const handleRemove = async (user1) => {
         if (selectedChat.groupAdmin._id !== user._id && user1._id !== user._id) {

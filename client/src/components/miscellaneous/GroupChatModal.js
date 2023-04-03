@@ -31,7 +31,8 @@ const GroupChatModal = ({ children }) => {
         }
     };
 
-    const baseUrl = `http://localhost:5000`;
+    // const baseUrl = `http://localhost:5000`;
+    const baseUrl = `https://chatappbackend-ocod.onrender.com`;
 
 
     const handleSearch = async (query) => {
@@ -198,8 +199,6 @@ const GroupChatModal = ({ children }) => {
                         </FormControl>
 
 
-
-
                         {/* selected users */}
                         <Box
                             w='100%'
@@ -239,8 +238,6 @@ const GroupChatModal = ({ children }) => {
                                 )
                             }
                         </Box>
-
-
 
                     </ModalBody>
 

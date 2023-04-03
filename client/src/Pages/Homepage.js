@@ -31,7 +31,7 @@ const Homepage = () => {
                 borderRadius='lg'
                 borderWidth='1px'
             >
-                <Text fontSize='4xl' color='black'>Talk-A-Tive</Text>
+                <Text fontSize='4xl' color='black'>CHAT-APP</Text>
             </Box>
             <Box
                 bg='white'

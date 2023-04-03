@@ -17,10 +17,13 @@ import ScrollableChat from './ScrollableChat';
 import './styles.css';
 import typinganimation from '../animations/typing.json';
 
-const ENDPOINT = 'http://localhost:5000';
+// const ENDPOINT = 'http://localhost:5000';
+const ENDPOINT = 'https://chatappbackend-ocod.onrender.com';
+
 var socket, selectedChatCompare;
 
-const baseUrl = `http://localhost:5000`;
+// const baseUrl = `http://localhost:5000`;
+const baseUrl = `https://chatappbackend-ocod.onrender.com`;
 
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -78,7 +81,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 
 
                 let match = notification.some((notif) => notif.chat._id === newMessageReceived.chat._id);
-                console.log('match ka value ', match);
 
                 if (!match) {
                     setNotification([newMessageReceived, ...notification]);
@@ -96,7 +98,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 
     const fetchMessages = async () => {
         if (!selectedChat) {
-            // console.log('fetchmessages se return ho gye ');
             return;
         }
 
@@ -108,8 +109,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                 config
             );
 
-            // console.log('fetchMessage funciton me data ka value ye receive hua ', data);
-            // console.log(messages);
 
             setMessages(data);
             setLoading(false);
