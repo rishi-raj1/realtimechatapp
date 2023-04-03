@@ -9,7 +9,6 @@ import { ViewIcon } from '@chakra-ui/icons';
 const ProfileModal = ({ user, children }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
-    // console.log('profile modal me hai children ka value ', children);
 
     return (
         <>

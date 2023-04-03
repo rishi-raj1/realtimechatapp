@@ -30,6 +30,7 @@ const GroupChatModal = ({ children }) => {
             Authorization: `Bearer ${user.token}`
         }
     };
+
     const baseUrl = `http://localhost:5000`;
 
 

@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { Container, Box, Text, Tabs, TabList, Tab, TabPanel, TabPanels } from '@chakra-ui/react'
+
 import Login from '../components/authentication/Login';
 import Signup from '../components/authentication/Signup';
-import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
 
 
 const Homepage = () => {

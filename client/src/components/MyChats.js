@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 
+import axios from 'axios';
+
 import { Box, Button, Stack, Text, useToast } from '@chakra-ui/react';
 import { AddIcon } from '@chakra-ui/icons';
 
-import axios from 'axios';
 
 import UsersLoading from './UsersLoading';
 import { getSender } from '../config/ChatLogics';

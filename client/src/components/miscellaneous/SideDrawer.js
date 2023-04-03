@@ -165,9 +165,6 @@ const SideDrawer = () => {
                                             setSelectedChat(notif.chat);
                                             setNotification(notification.filter((n) => n !== notif));
                                         }}>
-                                            {/* {
-                                            console.log('notification ka content ', notif)
-                                        } */}
                                             {
                                                 notif.chat.isGroupChat ?
                                                     `New Message in ${notif.chat.chatName}`
