@@ -15,7 +15,8 @@ connectDB();
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:3000"],
+    // origin: ["http://localhost:3000"],
+    origin: ["https://chatt-appp.netlify.app"]
 }));
 
 app.use(express.json());  // to accept JSON data
@@ -39,7 +40,9 @@ const server = app.listen(PORT, console.log(`server started on port ${PORT}`.yel
 const io = require('socket.io')(server, {
     pingTimeout: 60000,
     cors: {
-        origin: ["http://localhost:3000"]
+        // origin: ["http://localhost:3000"],
+        origin: ["https://chatt-appp.netlify.app"],
+
     }
 });
 
@@ -65,10 +68,10 @@ io.on('connection', (socket) => {
 
     socket.on('new message', (newMessagesReceived) => {
         var chat = newMessagesReceived.chat;
-        console.log(chat.users);
+        // console.log(chat.users);
 
         if (!chat.users) {
-            console.log('chat.users not defined');
+            // console.log('chat.users not defined');
             return;
         }
 
@@ -88,7 +91,7 @@ io.on('connection', (socket) => {
 
 
     socket.on('leave previous chat', (room) => {
-        console.log('User Leaved Room: ', room);
+        // console.log('User Leaved Room: ', room);
         socket.leave(room);
     })
 
