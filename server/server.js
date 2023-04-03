@@ -15,7 +15,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:3000"]
+    origin: ["http://localhost:3000"],
 }));
 
 app.use(express.json());  // to accept JSON data
@@ -45,17 +45,17 @@ const io = require('socket.io')(server, {
 
 
 io.on('connection', (socket) => {
-    console.log('connected to socket.io');
+    // console.log('connected to socket.io');
 
     socket.on('setup', (userData) => {
         socket.join(userData._id);
-        console.log(userData.name + ' connected from frontend ');
+        // console.log(userData.name + ' connected from frontend ');
         socket.emit('connected');
     });
 
     socket.on('join chat', (room) => {
         socket.join(room);
-        console.log('User Joined Room: ' + room);
+        // console.log('User Joined Room: ' + room);
     });
 
 
