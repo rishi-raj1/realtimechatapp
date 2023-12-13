@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import axios from 'axios';
 
 import { ViewIcon } from '@chakra-ui/icons';
-import { Box, Button, FormControl, IconButton, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Spinner, Text, useDisclosure, useToast } from '@chakra-ui/react';
+import { Box, Button, FormControl, IconButton, Input, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Spinner, Text, useDisclosure, useToast } from '@chakra-ui/react';
 
 
 import { ChatState } from '../../Context/ChatProvider';
