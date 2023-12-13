@@ -19,3 +19,14 @@ function App() {
 }
 
 export default App;
+
+
+//  file in which backend url is present 
+//   D:\realtimechatapp\client\src\components\authentication\Login.js
+//   D:\realtimechatapp\client\src\components\authentication\Signup.js
+//   D:\realtimechatapp\client\src\components\miscellaneous\GroupChatModal.js
+//   D:\realtimechatapp\client\src\components\miscellaneous\SideDrawer.js
+//   D:\realtimechatapp\client\src\components\miscellaneous\UpdateGroupChatModal.js
+//   D:\realtimechatapp\client\src\components\MyChats.js
+//   D:\realtimechatapp\client\src\components\SingleChat.js
+//   

@@ -32,7 +32,7 @@ const UpdateGroupChatModal = ({ fetchAgain, setFetchAgain }) => {
     };
 
     // const baseUrl = `http://localhost:5000`;
-    const baseUrl = `https://chatappbackend-ocod.onrender.com`;
+    const baseUrl = `https://chatappbackend12.onrender.com`;
 
 
 

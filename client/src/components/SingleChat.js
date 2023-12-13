@@ -18,12 +18,12 @@ import './styles.css';
 import typinganimation from '../animations/typing.json';
 
 // const ENDPOINT = 'http://localhost:5000';
-const ENDPOINT = 'https://chatappbackend-ocod.onrender.com';
+const ENDPOINT = 'https://chatappbackend12.onrender.com';
 
 var socket, selectedChatCompare;
 
 // const baseUrl = `http://localhost:5000`;
-const baseUrl = `https://chatappbackend-ocod.onrender.com`;
+const baseUrl = `https://chatappbackend12.onrender.com`;
 
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
