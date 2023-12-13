@@ -16,7 +16,7 @@ const app = express();
 
 app.use(cors({
     // origin: ["http://localhost:3000"],
-    origin: ["https://chatt-appp.netlify.app"]
+    origin: ["https://chatt-app12.netlify.app"]
 }));
 
 app.use(express.json());  // to accept JSON data
@@ -41,7 +41,7 @@ const io = require('socket.io')(server, {
     pingTimeout: 60000,
     cors: {
         // origin: ["http://localhost:3000"],
-        origin: ["https://chatt-appp.netlify.app"],
+        origin: ["https://chatt-app12.netlify.app"],
 
     }
 });
